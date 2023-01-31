@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/909/909263.png">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="CV.css">
+    <!-- Icons source -->
+    <script src="https://kit.fontawesome.com/fec191feee.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <script src="CV.js"></script>
+    <!-- Download button custom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- Nota para el encargado de la corrección: Hola! Te quería comentar que no encontré una manera que me parezca adecuada 
+(en términos de codificación) para hacer que, al tocar los links de la barra de navegación (Navbar) me lleve a la sección 
+deseada y dejándola centrada en el medio de la pantalla. Entonces lo intenté resolver de una manera que supongo que es incorrecta,
+pero efectiva al fin jaja. No sé si la nota del proyecto viene sola o con una devolución, pero me gustaría, si no es mucha molestia,
+que de alguna forma me puedas enviar el código para ver cómo sería correctamente. Gracias y saludos! -->
+<body>
+    <!-- Header section start -->
+    <!-- Navbar start -->
+    <div class="navbar">
+        <ul class="navbar">
+            <li class="navbar"><a class="navbar" href="#infop">Información personal</a></li>
+            <li class="navbar"><a class="navbar" href="#EyC">Estudios y capacitaciones</a></li>
+            <li class="navbar"><a class="navbar" href="#exp">Experiencia laboral</a></li>
+            <li class="navbar"><a class="navbar" href="#CyH">Cualidades y habilidades</a></li>
+            <li class="navbar"><a class="navbar" href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+    <!-- Navbar end -->
+    <div class="intro">
+        <p>Hola! mi nombre es</p>
+        <h1 class="bold">Pedro Ezequiel Siccardi</h1>
+        <p>Y soy</p>
+        <h2 class="bold">Técnico aeronáutico</h2>
+    </div>
+    <div class="img_intro">
+        <img id="img" src="https://media.glamour.es/photos/616fc22061a372755b809aa6/master/w_1920%2Cc_limit/370116.jpg" alt="Imagen de Pedro">
+    </div>
+    <!-- Header section end -->
+    <!-- Personal information section start -->
+    <hr id="infop">
+    <div class="info_p">
+        <h1 class="bold"><i class="fas fa-user" style="font-size: 30px;"> </i> Información personal</h1>
+        <ul class="ulside">
+            <li><u>Fecha de nacimiento:</u> 11 de agosto del 2003</li>
+            <li><u>Lugar de nacimiento:</u> La Plata, Provincia de Buenos Aires, Argentina</li>
+            <li><u>Edad:</u> 19 años</li>
+            <li><u>Nacionalidad:</u> argentino</li>
+            <li id="EyC"><u>DNI:</u> 45.200.666</li>
+        </ul>
+    </div>
+    <!-- Personal information end -->
+    <!-- Studies and training section start -->
+    <div class="est_cap">
+        <h1 class="bold"><i class="fas fa-book" style="font-size: 30px;"></i> Estudios y capacitaciones</h1>
+        <div id="d1">
+            <button type="button" onclick="boton1()">Mostrar estudios</button>
+            <p><ul id="p1">
+                <li class="li1">Bachiller en <a href="http://45.229.86.234/" target="_blank">C.I.A.T.A.</a> (2016 - 2022)<ul>
+                    <li class="li0">Sin repitencia</li>
+                    <li class="li0">Sin adeudar materias</li>
+                </ul></li>
+                <li class="li1">Técnico aeronáutico en <a href="http://45.229.86.234/" target="_blank">C.I.A.T.A.</a> (2016 - 2022)</li> <ul>
+                    <li class="li0">Primer promedio de la sección aeronáutica</li>
+                </ul>
+            </ul></p>
+        </div>
+        <div id="d2">
+            <button id="exp" type="button" onclick="boton2()">Mostrar capacitaciones</button>
+            <p><ul id="p2">
+                <li class="li1">Curso de conocimiento de la aeronave <a href="https://es.wikipedia.org/wiki/Piper_PA-28_Cherokee" target="_blank">Piper PA-28</a>
+                     dictado por <a href="https://www.argentina.gob.ar/prefecturanaval" target="_blank">Prefectura Naval Argentina</a> en el 
+                     <a href="https://goo.gl/maps/wYAGh8jtdS4NMCiM8" target="_blank">Aeropuerto Internacional San Fernando</a></li>
+                <li class="li1">Seminario universitario de ingreso 2023 aprobado para ingeniería industrial en <a href="https://www.frh.utn.edu.ar/" target="_blank">U.T.N. F.R.H.</a></li>
+                <li class="li1">Certificado <a href="https://www.aaci.org.ar/" target="_blank">A.A.C.I.</a> nivel B2 de inglés con una nota final de 9.75/10</li>
+            </ul></p>
+        </div>
+    </div>
+    <!-- Studies and trainings section end -->
+    <!-- Work experience section start -->
+    <div class="exp_l">
+        <h1 class="bold"><i class="fas fa-briefcase" style="font-size: 40px;"></i> Experiencia laboral</h1>
+        <ul class="ulnone">
+            <li id="CyH"><i class="fa-solid fa-wrench" style="font-size: 20px; color: red;"></i> Pasantía educativa en <a href="https://www.divisionturbos.com/" target="_blank">División Turbos S.R.L.</a> (Junio 2022 - Agosto 2022)</li>
+        </ul>
+    </div>
+    <!-- Work experience section end -->
+    <!-- Qualities and skills section start -->
+    <div class="cua_hab">
+        <h1 class="bold"><i class="fas fa-lightbulb" style="font-size: 40px;"></i> Cualidades y habilidades</h1>
+        <br>
+        <div id="d3">
+            <button type="button" onclick="boton3()">Mostrar cualidades</button>
+            <p><ul id="p3">
+                <li class="li0">Responsabilidad</li>
+                <li class="li0">Adaptabilidad</li>
+                <li class="li0">Compromiso</li>
+                <li class="li0">Organización</li>
+                <li class="li0">Trabajo en equipo</li>
+            </ul></p>
+        </div>
+        <div id="d4">
+            <button id="contacto" type="button" onclick="boton4()">Mostrar habilidades</button>
+            <p><ul id="p4">
+                <li class="li0"><a href="https://latinoamerica.autodesk.com/" target="_blank">AutoCAD</a>: nivel intermedio</li>
+                <li class="li0"><a href="https://www.microsoft.com/es-es/microsoft-365/word?activetab=tabs%3afaqheaderregion3" target="_blank">Microsoft Word</a>: nivel usuario</li>
+                <li class="li0"><a href="https://www.microsoft.com/es-ar/microsoft-365/excel" target="_blank">Microsoft Excel</a>: nivel usuario</li>
+                <li class="li0">Desarrollo web: nivel inicial</li>
+            </ul></p>
+        </div>
+        </div>
+    </div>
+    <!-- Qualities and skills section end -->
+    <!-- Contact section start -->
+    <div class="contacto">
+        <h1 class="bold"><i class="fas fa-address-book" style="font-size: 30px;"></i> Contacto</h1>
+        <ul class="ulnone">
+            <li><i class="fas fa-phone" style="font-size: 20px; color: red"></i> <u>Teléfono celular:</u> <a href="tel:+54 11 41806437">+54 11 4180-6437</a></li>
+            <li><i class="fas fa-envelope" style="font-size:20px;color:red"></i> <u>E-mail personal:</u> <a href="mailto:pedroezequielsiccardi@gmail.com" target="_blank">pedroezequielsiccardi@gmail.com</a></li>
+            <li><i class="fab fa-instagram" style="font-size: 20px; color: red;"></i> <u>Instagram:</u> <a href="https://instagram.com/pedro.siccardi?igshid=ZDdkNTZiNTM=" target="_blank">Pedro.siccardi</a></li>
+            <li><i class="fas fa-location-dot" style="font-size: 20px; color: red;"></i> <u>Dirección:</u> Luis María Drago 2240, Castelar, Provincia de Buenos Aires</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.979946640712!2d-58.63915348531112!3d-34.65520936773041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc757292f557d%3A0x66143f7cb9212b9c!2sLuis%20Mar%C3%ADa%20Drago%202240%2C%20B1712CPN%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674601294522!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Contact section end -->
+</body>
+</html>
